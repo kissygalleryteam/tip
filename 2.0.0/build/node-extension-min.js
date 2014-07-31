@@ -1,0 +1,2 @@
+/*!build time : 2014-07-31 8:11:41 PM*/
+KISSY.add("kg/tip/2.0.0/node-extension",function(a,b,c){"use strict";a.augment(a.Node,{beyondViewPortRegion:function(b){function d(a,b){return a>=i+e&&i+h-e>=a&&b>=j+e&&j+g-e>=b?!0:!1}var e,f=this;e=a.isUndefined(b)?0:b;var g,h,i,j,k=f.offset();return g=c.viewportHeight(),h=c.viewportWidth(),i=c.scrollLeft(),j=c.scrollTop(),{start:d(k.left,k.top),end:d(k.left+f.width(),k.top+f.height())}},inViewportRegion:function(a){var b=this,c=b.beyondViewPortRegion(a);return c.start&&c.end?!0:!1}})},{requires:["node","dom"]});
